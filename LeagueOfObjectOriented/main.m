@@ -17,8 +17,7 @@ int main(int argc, const char * argv[])
         NSLog(@"Hello, World!");
         
         
-        
-        
+        NSLog(@"Um novo comentário");
         
     }
     return 0;
