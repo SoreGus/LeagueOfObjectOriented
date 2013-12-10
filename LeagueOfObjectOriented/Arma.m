@@ -15,8 +15,6 @@
     return 0;
 }
 
-//Carlao baitola
-
 @end
 
 
