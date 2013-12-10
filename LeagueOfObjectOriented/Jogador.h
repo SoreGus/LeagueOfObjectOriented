@@ -24,6 +24,8 @@
 @property (nonatomic) Arma* armaPrimaria;
 @property (nonatomic) Arma* armaSecundaria;
 
+//commit // push // Gustavo
+
 -(float)ataque:(Jogador*)adversario;
 -(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca;
 
