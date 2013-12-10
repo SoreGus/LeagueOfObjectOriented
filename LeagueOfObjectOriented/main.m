@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Teste!");
         
 
         //Teste Usuario Rodrigo Soldi do git
