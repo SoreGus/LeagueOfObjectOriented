@@ -12,7 +12,6 @@
 
 @implementation Espada
 
-@synthesize forcaMaxima,desgaste;
 
 -(id)init {
     self = [super init];
@@ -37,6 +36,10 @@
         return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste))*precisaoDoAtaque;
     }
     else return 0;
+}
+
+-(void)desgastar {
+    desgaste += 5;
 }
 
 @end

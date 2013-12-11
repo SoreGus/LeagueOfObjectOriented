@@ -13,9 +13,6 @@
     int desgaste;
 }
 
-@property (nonatomic,assign) int forcaMaxima;
-@property (nonatomic,assign) int desgaste;
-
 -(double) calculaForcaJogador:(Jogador *)novoJogador;
-
+-(void)desgastar;
 @end
