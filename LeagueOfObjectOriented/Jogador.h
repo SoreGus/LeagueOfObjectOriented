@@ -20,7 +20,7 @@
     Arma *armaSecundaria;
 }
 
--(id)initNome:(NSString*)n comRaca:(int)r comArmaPrimaria:(Arma *)a;
+-(id)initNome:(NSString*)n comRaca:(int)r comArmaPrimaria:(Arma *)a comArmaSecundaria:(Arma *)b;
 
 @property (nonatomic,strong) NSString *nome;
 @property (nonatomic,assign) int raca;
@@ -36,7 +36,7 @@
 +(int)ORC;
 
 
--(float)ataque:(Jogador*)adversario;
+-(float)ataque:(Jogador*)adversario comArma:(int)a;
 -(float)sofreAtaque:(Jogador *)arma comForca:(double)forca;
 
 @end

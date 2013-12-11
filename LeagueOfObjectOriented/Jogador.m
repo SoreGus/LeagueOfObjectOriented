@@ -24,7 +24,7 @@ static const int HUMANO = 8;
 +(int)ORC{return ORC;}
 
 
--(id)initNome:(NSString*)n comRaca:(int)r comArmaPrimaria:(Arma *)a{
+-(id)initNome:(NSString*)n comRaca:(int)r comArmaPrimaria:(Arma *)a comArmaSecundaria:(Arma *)b{
     nome = n;
     raca = r;
     vida = 1000;
@@ -32,11 +32,15 @@ static const int HUMANO = 8;
     forcaAtaque = 100;
     forcaDefesa = 100;
     armaPrimaria = a;
+    armaSecundaria = b;
     return self;
 }
 
--(float)ataque:(Jogador*)adversario{
+-(float)ataque:(Jogador*)adversario comArma:(int)a{
+    if(a == 1)
     return [self sofreAtaque:adversario comForca:[armaPrimaria calculaForcaJogador:self]];
+    else
+    return [self sofreAtaque:adversario comForca:[armaSecundaria calculaForcaJogador:self]*0.8];
 }
 
 

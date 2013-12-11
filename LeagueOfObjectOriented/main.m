@@ -9,16 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "Jogador.h"
 #import "Espada.h"
+#import "Faca.h"
+#import "ArcoEFlexa.h"
 #import "CapaInvisibilidade.h"
 
 int main(){
     @autoreleasepool {
         Espada *escalibur = [Espada new];
         CapaInvisibilidade *capa = [CapaInvisibilidade new];
-        Jogador *j1 = [[Jogador alloc]initNome:@"Gandalf" comRaca:4 comArmaPrimaria:escalibur];
-        Jogador *j2 = [[Jogador alloc]initNome:@"Joel" comRaca:4 comArmaPrimaria:capa];
-        [j1 ataque:j2];
-        [j2 ataque:j1];
+        Faca *estilete = [Faca new];
+        ArcoEFlexa *arco = [ArcoEFlexa new];
+        Jogador *j1 = [[Jogador alloc]initNome:@"Gandalf" comRaca:4 comArmaPrimaria:escalibur comArmaSecundaria:estilete];
+        Jogador *j2 = [[Jogador alloc]initNome:@"Joel" comRaca:4 comArmaPrimaria:capa comArmaSecundaria:arco];
+        [j1 ataque:j2 comArma:1];
+        [j2 ataque:j1 comArma:2];
         NSLog(@"vida %@ igual: %.2f\n",[j1 nome],[j1 vida]);
         NSLog(@"vida %@ igual: %.2f",[j2 nome],[j2 vida]);
     }
