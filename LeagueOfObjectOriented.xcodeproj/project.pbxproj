@@ -251,6 +251,7 @@
 				GCC_PREFIX_HEADER = "LeagueOfObjectOriented/LeagueOfObjectOriented-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -261,6 +262,7 @@
 				GCC_PREFIX_HEADER = "LeagueOfObjectOriented/LeagueOfObjectOriented-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
