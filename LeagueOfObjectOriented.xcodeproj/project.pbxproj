@@ -16,6 +16,7 @@
 		59C07796185880A500A0AAD3 /* CapaInvisibilidade.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C07795185880A500A0AAD3 /* CapaInvisibilidade.m */; };
 		7415EDEF18587374002BBE9C /* ArcoEFlexa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415EDEB18587374002BBE9C /* ArcoEFlexa.m */; };
 		7415EDF018587374002BBE9C /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415EDED18587374002BBE9C /* Espada.m */; };
+		79FDDA601858877300A92A80 /* Faca.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FDDA5F1858877300A92A80 /* Faca.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		7415EDEB18587374002BBE9C /* ArcoEFlexa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcoEFlexa.m; sourceTree = "<group>"; };
 		7415EDEC18587374002BBE9C /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
 		7415EDED18587374002BBE9C /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
+		79FDDA5E1858877300A92A80 /* Faca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Faca.h; sourceTree = "<group>"; };
+		79FDDA5F1858877300A92A80 /* Faca.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Faca.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				271F24621854A34F0024E200 /* LeagueOfObjectOriented.1 */,
 				271F24601854A34F0024E200 /* Supporting Files */,
 				271F24691854F9B30024E200 /* Jogador.h */,
+				79FDDA5E1858877300A92A80 /* Faca.h */,
+				79FDDA5F1858877300A92A80 /* Faca.m */,
 				7415EDEA18587374002BBE9C /* ArcoEFlexa.h */,
 				7415EDEB18587374002BBE9C /* ArcoEFlexa.m */,
 				7415EDEC18587374002BBE9C /* Espada.h */,
@@ -173,6 +178,7 @@
 				271F246B1854F9B30024E200 /* Jogador.m in Sources */,
 				271F245F1854A34F0024E200 /* main.m in Sources */,
 				59C07796185880A500A0AAD3 /* CapaInvisibilidade.m in Sources */,
+				79FDDA601858877300A92A80 /* Faca.m in Sources */,
 				271F246E1854FBB50024E200 /* Arma.m in Sources */,
 				7415EDEF18587374002BBE9C /* ArcoEFlexa.m in Sources */,
 				7415EDF018587374002BBE9C /* Espada.m in Sources */,
