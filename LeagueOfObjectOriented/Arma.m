@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         srand(time(NULL));
-        precisaoDoAtaque = ((rand()%41+60)/100) +1;
+        precisaoDoAtaque = ((rand()%41)+60)/100.0;
     }
     return self;
 }

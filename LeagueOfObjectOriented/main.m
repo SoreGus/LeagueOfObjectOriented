@@ -8,17 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Jogador.h"
-#import "Espada.h"
-#import "Faca.h"
-#import "ArcoEFlexa.h"
-#import "CapaInvisibilidade.h"
+#import "ArmaFactory.h"
 
 int main(){
     @autoreleasepool {
-        Espada *escalibur = [Espada new];
-        CapaInvisibilidade *capa = [CapaInvisibilidade new];
-        Faca *estilete = [Faca new];
-        ArcoEFlexa *arco = [ArcoEFlexa new];
+        Arma *escalibur = [ArmaFactory cria:@"e"];
+        Arma *capa = [ArmaFactory cria:@"c"];
+        Arma *estilete = [ArmaFactory cria:@"f"];
+        Arma *arco = [ArmaFactory cria:@"a"];
         Jogador *j1 = [[Jogador alloc]initNome:@"Gandalf" comRaca:4 comArmaPrimaria:escalibur comArmaSecundaria:estilete];
         Jogador *j2 = [[Jogador alloc]initNome:@"Joel" comRaca:4 comArmaPrimaria:capa comArmaSecundaria:arco];
         [j1 ataque:j2 comArma:1];

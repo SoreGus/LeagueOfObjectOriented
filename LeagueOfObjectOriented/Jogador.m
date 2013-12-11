@@ -56,8 +56,8 @@ static const int HUMANO = 8;
         dano = forca - ((([adversario forcaDefesa]*rand()%101)/100) + 10 + [adversario forcaEscudo]);
     }
     [adversario setForcaEscudo:[adversario forcaEscudo] - 1];
-    [adversario setVida:[adversario vida] - dano];
     if(dano < 0) return 0;
+    [adversario setVida:[adversario vida] - dano];
     return dano;
 }
 

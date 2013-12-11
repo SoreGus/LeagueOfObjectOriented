@@ -25,16 +25,16 @@
     if(quantFlexas > 0){
         quantFlexas--;
         if([novoJogador raca] == [Jogador ORC]) {
-            return ([novoJogador forcaAtaque]+10)*precisaoDoAtaque;
+            return ([novoJogador forcaAtaque]+10)*precisaoDoAtaque*2;
         }
         else if([novoJogador raca] == [Jogador HUMANO]) {
-            return [novoJogador forcaAtaque]*precisaoDoAtaque;
+            return [novoJogador forcaAtaque]*precisaoDoAtaque*2;
         }
         else if([novoJogador raca] == [Jogador ANAO]) {
-            return ([novoJogador forcaAtaque]+5)*precisaoDoAtaque;
+            return ([novoJogador forcaAtaque]+5)*precisaoDoAtaque*2;
         }
         else if([novoJogador raca] == [Jogador ELFO]) {
-            return ([novoJogador forcaAtaque]+[novoJogador forcaAtaque]*0.1)*precisaoDoAtaque;
+            return ([novoJogador forcaAtaque]*1.1)*precisaoDoAtaque*2;
         }
         else return 0;
     }
