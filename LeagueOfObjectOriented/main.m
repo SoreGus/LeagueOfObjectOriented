@@ -22,4 +22,4 @@ int main(){
         NSLog(@"vida %@ igual: %.2f\n",[j1 nome],[j1 vida]);
         NSLog(@"vida %@ igual: %.2f",[j2 nome],[j2 vida]);
     }
-}
+}//main
