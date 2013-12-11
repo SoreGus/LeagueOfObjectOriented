@@ -12,7 +12,6 @@
 @interface Arma : NSObject{
     float precisaoDoAtaque;
 }
-@property (nonatomic,assign) float precisaoDoAtaque;
 -(double) calculaForcaJogador:(Jogador *)novoJogador;
 
 @end

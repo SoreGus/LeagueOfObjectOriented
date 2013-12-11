@@ -14,14 +14,21 @@
 
 @synthesize forcaMaxima,desgaste;
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        forcaMaxima = 100;
+        desgaste = 0;
+    }
+    return self;
+}
+
 -(double) calculaForcaJogador:(Jogador *)novoJogador{
-    srand(time(NULL));
-    precisaoDoAtaque = ((rand() % 41) + 60)/100;
     if([novoJogador raca] == [Jogador ORC]){
-        return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste)+(forcaMaxima-desgaste)*0.1+10)*precisaoDoAtaque;
+        return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste)+10)*precisaoDoAtaque;
     }
     else if([novoJogador raca] == [Jogador HUMANO]){
-        return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste)+(forcaMaxima-desgaste)*0.1)*precisaoDoAtaque;
+        return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste))*precisaoDoAtaque;
     }
     else if([novoJogador raca] == [Jogador ANAO]){
         return ([novoJogador forcaAtaque]+(forcaMaxima-desgaste)+5)*precisaoDoAtaque;

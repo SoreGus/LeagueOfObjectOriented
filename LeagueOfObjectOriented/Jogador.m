@@ -23,13 +23,14 @@ static const int HUMANO = 8;
 +(int)ANAO{return ANAO;}
 +(int)ORC{return ORC;}
 
--(id)initNome:(NSString*)n comRaca:(int)r comVida:(float)v comForcaEscudo:(int)fe comForcaAtaque:(int)fa comForcaDefesa:(int)fd comArmaPrimaria:(Arma *)a{
+
+-(id)initNome:(NSString*)n comRaca:(int)r comArmaPrimaria:(Arma *)a{
     nome = n;
     raca = r;
-    vida = v;
-    forcaEscudo = fe;
-    forcaAtaque = fa;
-    forcaDefesa = fd;
+    vida = 1000;
+    forcaEscudo = 100;
+    forcaAtaque = 100;
+    forcaDefesa = 100;
     armaPrimaria = a;
     return self;
 }
@@ -40,7 +41,6 @@ static const int HUMANO = 8;
 
 
 -(float)sofreAtaque:(Jogador *)adversario comForca:(double)forca{
-    srand(time(NULL));
     float dano = 0;
     if([adversario raca] == ORC){
         dano = forca - ((([adversario forcaDefesa]*rand()%101)/100) + 5 + [adversario forcaEscudo]);
@@ -52,6 +52,7 @@ static const int HUMANO = 8;
         dano = forca - ((([adversario forcaDefesa]*rand()%101)/100) + 10 + [adversario forcaEscudo]);
     }
     [adversario setForcaEscudo:[adversario forcaEscudo] - 1];
+    [adversario setVida:[adversario vida] - dano];
     if(dano < 0) return 0;
     return dano;
 }
