@@ -12,6 +12,8 @@
 
 @implementation Espada
 
+@synthesize forcaMaxima, desgaste;
+
 
 -(id)init {
     self = [super init];
@@ -40,6 +42,15 @@
 
 -(void)desgastar {
     desgaste += 5;
+}
+
+- (id)initDefault {
+    self = [[Espada alloc] init];
+    
+    [self setForcaMaxima:100];
+    [self setDesgaste:0];
+    
+    return self;
 }
 
 @end

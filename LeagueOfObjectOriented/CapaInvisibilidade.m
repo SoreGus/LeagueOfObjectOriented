@@ -10,6 +10,9 @@
 #import "Jogador.h"
 
 @implementation CapaInvisibilidade
+
+@synthesize forcaMaxima, desgaste;
+
 -(id)init {
     self = [super init];
     if (self) {
@@ -37,6 +40,13 @@
 
 -(void)desgastar {
     desgaste += 5;
+}
+
+- (id)initDefault {
+    self = [[CapaInvisibilidade alloc] init];
+    [self setForcaMaxima:70];
+    [self setDesgaste:0];
+    return self;
 }
 
 @end

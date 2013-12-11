@@ -14,4 +14,6 @@
 }
 -(double) calculaForcaJogador:(Jogador *)novoJogador;
 
+- (id) initDefault;
+
 @end

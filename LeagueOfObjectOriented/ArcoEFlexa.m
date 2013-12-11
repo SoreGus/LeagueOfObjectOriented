@@ -41,4 +41,12 @@
     else return 0;
 }
 
+- (id)initDefault {
+    self = [[ArcoEFlexa alloc] init];
+    
+    [self setQuantFlexas:100];
+    
+    return self;
+}
+
 @end

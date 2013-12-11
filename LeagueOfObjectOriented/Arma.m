@@ -21,4 +21,11 @@
 -(double) calculaForcaJogador:(Jogador *)novoJogador{
     return 0;
 }
+
+-(id) initDefault {
+    self = [super init];
+    
+    return self;
+}
+
 @end

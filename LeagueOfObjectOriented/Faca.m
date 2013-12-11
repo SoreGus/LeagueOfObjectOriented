@@ -39,4 +39,13 @@
     return 0;
 }
 
+- (id)initDefault {
+    self = [[Faca alloc] init];
+    
+    [self setDesgaste:0];
+    [self setForca:50];
+    
+    return self;
+}
+
 @end

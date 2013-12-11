@@ -17,4 +17,6 @@
 @property (nonatomic,assign) int desgaste;
 @property (nonatomic,assign) int forca;
 
+- (id)initDefault;
+
 @end

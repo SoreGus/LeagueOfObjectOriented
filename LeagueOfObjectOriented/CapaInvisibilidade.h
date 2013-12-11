@@ -14,7 +14,11 @@
     int desgaste;
 }
 
+@property int forcaMaxima;
+@property int desgaste;
+
 -(double) calculaForcaJogador:(Jogador *)novoJogador;
 -(void)desgastar;
+- (id)initDefault;
 
 @end
