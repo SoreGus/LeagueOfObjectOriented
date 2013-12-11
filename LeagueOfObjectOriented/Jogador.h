@@ -1,32 +1,42 @@
 //
 //  Jogador.h
-//  LeagueOfObjectOriented
+//  LeagueOfOrientedObject
 //
-//  Created by Vinicius Miana on 12/8/13.
-//  Copyright (c) 2013 Vinicius Miana. All rights reserved.
+//  Created by GUSTAVO LUIS on 11/19/13.
+//  Copyright (c) 2013 GUSTAVO LUIS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Arma.h"
+@class Arma;
 
-#define ELFO 0
-#define HUMANO 1
-#define ORC 2
-#define ANAO 3
-
-@interface Jogador : NSObject {
-    
-    
+@interface Jogador : NSObject{
+    NSString *nome;
+    int raca;
+    float vida;
+    int forcaEscudo;
+    int forcaAtaque;
+    int forcaDefesa;
+    Arma *armaPrimaria;
+    Arma *armaSecundaria;
 }
-@property (nonatomic) int raca;
-@property (nonatomic) float vida;
-@property (nonatomic) int forcaEscudo;
-@property (nonatomic) Arma* armaPrimaria;
-@property (nonatomic) Arma* armaSecundaria;
 
-//commit // push // Gustavo
+-(id)initNome:(NSString*)n comRaca:(int)r comVida:(float)v comForcaEscudo:(int)fe comForcaAtaque:(int)fa comForcaDefesa:(int)fd comArmaPrimaria:(Arma *)a;
+
+@property (nonatomic,strong) NSString *nome;
+@property (nonatomic,assign) int raca;
+@property (nonatomic,assign) int forcaEscudo;
+@property (nonatomic,assign) float vida;
+@property (nonatomic,assign) int forcaAtaque;
+@property (nonatomic,assign) int forcaDefesa;
+
+
++(int)HUMANO;
++(int)ELFO;
++(int)ANAO;
++(int)ORC;
+
 
 -(float)ataque:(Jogador*)adversario;
--(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca;
+-(float)sofreAtaque:(Jogador *)arma comForca:(double)forca;
 
 @end

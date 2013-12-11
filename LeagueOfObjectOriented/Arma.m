@@ -1,21 +1,16 @@
 //
 //  Arma.m
-//  LeagueOfObjectOriented
+//  LeagueOfOrientedObject
 //
-//  Created by Vinicius Miana on 12/8/13.
-//  Copyright (c) 2013 Vinicius Miana. All rights reserved.
+//  Created by GUSTAVO LUIS on 11/19/13.
+//  Copyright (c) 2013 GUSTAVO LUIS. All rights reserved.
 //
 
 #import "Arma.h"
-
+#import "Jogador.h"
 @implementation Arma
-
-
--(double)calcularForcaAtaque:(Jogador*)jogador {
+@synthesize precisaoDoAtaque;
+-(double) calculaForcaJogador:(Jogador *)novoJogador{
     return 0;
 }
-
 @end
-
-
-

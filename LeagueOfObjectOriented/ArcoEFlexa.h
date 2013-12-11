@@ -1,18 +1,19 @@
 //
-//  Arma.h
+//  ArcoEFlexa.h
 //  LeagueOfOrientedObject
 //
 //  Created by GUSTAVO LUIS on 11/19/13.
 //  Copyright (c) 2013 GUSTAVO LUIS. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-@class Jogador;
+#import "Arma.h"
 
-@interface Arma : NSObject{
-    float precisaoDoAtaque;
+@interface ArcoEFlexa : Arma{
+    int quantFlexas;
 }
-@property (nonatomic,assign) float precisaoDoAtaque;
+
+@property (nonatomic,assign) int quantFlexas;
+
 -(double) calculaForcaJogador:(Jogador *)novoJogador;
 
 @end
