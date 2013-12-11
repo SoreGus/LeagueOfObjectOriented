@@ -16,6 +16,7 @@
 		59C07796185880A500A0AAD3 /* CapaInvisibilidade.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C07795185880A500A0AAD3 /* CapaInvisibilidade.m */; };
 		7415EDEF18587374002BBE9C /* ArcoEFlexa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415EDEB18587374002BBE9C /* ArcoEFlexa.m */; };
 		7415EDF018587374002BBE9C /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415EDED18587374002BBE9C /* Espada.m */; };
+		7415EDF318588112002BBE9C /* Faca.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415EDF218588112002BBE9C /* Faca.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		7415EDEB18587374002BBE9C /* ArcoEFlexa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcoEFlexa.m; sourceTree = "<group>"; };
 		7415EDEC18587374002BBE9C /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
 		7415EDED18587374002BBE9C /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
+		7415EDF118588112002BBE9C /* Faca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Faca.h; sourceTree = "<group>"; };
+		7415EDF218588112002BBE9C /* Faca.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Faca.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,13 @@
 				271F246D1854FBB50024E200 /* Arma.m */,
 				271F246F1854FEDE0024E200 /* LeagueOfOrientedObject.h */,
 				271F24701854FEDE0024E200 /* LeagueOfOrientedObject.m */,
+<<<<<<< HEAD
 				59C07794185880A500A0AAD3 /* CapaInvisibilidade.h */,
 				59C07795185880A500A0AAD3 /* CapaInvisibilidade.m */,
+=======
+				7415EDF118588112002BBE9C /* Faca.h */,
+				7415EDF218588112002BBE9C /* Faca.m */,
+>>>>>>> 6f9ccccca471fefcc93985de9ce416998fc8d627
 			);
 			path = LeagueOfObjectOriented;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				271F24711854FEDE0024E200 /* LeagueOfOrientedObject.m in Sources */,
+				7415EDF318588112002BBE9C /* Faca.m in Sources */,
 				271F246B1854F9B30024E200 /* Jogador.m in Sources */,
 				271F245F1854A34F0024E200 /* main.m in Sources */,
 				59C07796185880A500A0AAD3 /* CapaInvisibilidade.m in Sources */,
@@ -257,6 +266,7 @@
 				GCC_PREFIX_HEADER = "LeagueOfObjectOriented/LeagueOfObjectOriented-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -267,6 +277,7 @@
 				GCC_PREFIX_HEADER = "LeagueOfObjectOriented/LeagueOfObjectOriented-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
